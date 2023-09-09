@@ -2,16 +2,16 @@ class Solution {
 public:
     bool check(vector<int>& nums) {
         int ckk=0;
-        int nofequal=0;
+        // int nofequal=0;
         for(int i =0;i<nums.size();i++){
              
              if(nums[i]<=nums[(i+1)%nums.size()]){
                
                 cout<<nums[0];
 
-                 if(nums[i]==nums[(i+1)%nums.size()]){
-                     nofequal++;
-                 }
+                //  if(nums[i]==nums[(i+1)%nums.size()]){
+                //      nofequal++;
+                //  }
 
                 
              }else {
@@ -20,7 +20,7 @@ public:
 
 
         }
-        if(ckk==1||nofequal==nums.size()){
+        if(ckk<=1){
             return true;
         }
         else{
